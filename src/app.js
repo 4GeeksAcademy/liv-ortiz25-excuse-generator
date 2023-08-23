@@ -16,20 +16,12 @@ let when = [
   "while I was praying"
 ];
 
-window.onload = function() {
+window.onload = function(excuse) {
   //write your code here
-  for (let i = 0; 1 < who.length; i++) {
-    const aleatorioWho = Math.floor(Math.random() * who.length);
-  }
-  for (let i = 0; 1 < action.length; i++) {
-    const aleatorioAction = Math.floor(Math.random() * action.length);
-  }
-  for (let i = 0; 1 < what.length; i++) {
-    const aleatorioWhat = Math.floor(Math.random() * what.length);
-  }
-  for (let i = 0; 1 < when.length; i++) {
-    const aleatorioWhen = Math.floor(Math.random() * when.length);
-  }
+  let who = Math.floor(Math.random() * who.length);
+  let who = Math.floor(Math.random() * who.length);
+  let who = Math.floor(Math.random() * who.length);
+  let who = Math.floor(Math.random() * who.length);
 
   console.log("Hello Rigo from the console!");
 };
