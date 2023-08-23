@@ -16,12 +16,17 @@ let when = [
   "while I was praying"
 ];
 
-window.onload = function(excuse) {
+window.onload = function generateExcuse() {
   //write your code here
-  let who = Math.floor(Math.random() * who.length);
-  let who = Math.floor(Math.random() * who.length);
-  let who = Math.floor(Math.random() * who.length);
-  let who = Math.floor(Math.random() * who.length);
+  let randomwho = Math.floor(Math.random() * who.length);
+  let randomaction = Math.floor(Math.random() * action.length);
+  let randomwhat = Math.floor(Math.random() * what.length);
+  let randomwhen = Math.floor(Math.random() * when.length);
+
+  return `${randomwho} ${randomaction} ${randomwhat} ${randomwhen}.`;
 
   console.log("Hello Rigo from the console!");
 };
+
+const excuseDisplay = (document.getElementById("excuse").innerHTML =
+  randomwho + randomaction + randomwhat + randomwhen);
